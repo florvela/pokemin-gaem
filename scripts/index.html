@@ -1,0 +1,62 @@
+<!doctype html> 
+<html lang="es">
+<head>
+	<!-- doctype es que todo va a se html 5; lang es el idioma(es, de español)-->
+	<meta charset="UTF-8"> <!-- mapa de caracteres  -->
+	<title>Pokemin gaem</title>
+	<!-- centrar pantalla (canvas) -->
+	<style>
+	canvas{
+		display: block;
+		position: absolute;
+		border: 1px solid #000;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+	</style>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body id= "body" style="background-image: url('../images/gameExtras/init.gif'); background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center; background-size: 75%;">
+	<h1 id="headd" style="display:none;">A POKEMIN GAEM</h1>
+
+	<img id="start" src="../images/gameExtras/start.jpeg" style="display:none;">
+	<img id="route" src="../images/gameExtras/route01.png" style="display:none;">	
+	<img id="DealWithIt" src="../images/gameExtras/nyaked.gif" style="display:none;">
+	<img id="init" src="../images/gameExtras/init.gif" style="display:none;">
+
+	<img id="Pokebola" src="../images/Player/pokebola.jpg" style="display:none;">
+	<img id="Ash" src="../images/Player/ash.jpg" style="display:none;">
+	<img id="Misty" src="../images/Player/Misty.jpg" style="display:none;">
+
+	<img id="poke1" src="../images/pokemons/poke1.jpg" style="display:none;">
+	<img id="poke2" src="../images/pokemons/poke2.jpg" style="display:none;">
+	<img id="poke3" src="../images/pokemons/poke3.jpg" style="display:none;">
+	<img id="poke4" src="../images/pokemons/poke4.jpg" style="display:none;">
+	<img id="poke5" src="../images/pokemons/poke5.jpg" style="display:none;">
+
+	<img id="Jessie" src="../images/rocketTeam/jessie.jpg" style="display:none;">
+	<img id="James" src="../images/rocketTeam/james.jpg" style="display:none;">
+	<img id="Meowth" src="../images/rocketTeam/meowth.jpg" style="display:none;">
+
+	
+	<div id="nivel"></div>
+	<script type="text/javascript" src="utils.js"></script>	
+	<script type="text/javascript" src="game.js"></script>	
+
+	<div class="butt" onclick="choose(0);">
+		ASH
+	</div>
+	<div class="butt button2" onclick="choose(1);">
+		MISTY
+	</div>
+
+	<div id="startbutton" onclick="IniciarCanvas(pxl);pintaFondo('#000');PorTeclado();loop();">
+	</div>
+
+</body>
+</html>
